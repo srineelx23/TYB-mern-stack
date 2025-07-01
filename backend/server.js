@@ -5,7 +5,7 @@ require('dotenv').config()
 const cors=require('cors')
 
 // const cors = require("cors");
-app.use(cors({ origin: "https://tybbyronin.netlify.app/", credentials: true }));
+app.use(cors({ origin: "https://tybbyronin.netlify.app", credentials: true }));
 
 
 app.use(exp.json())
