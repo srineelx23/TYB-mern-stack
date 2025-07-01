@@ -16,7 +16,7 @@ function SignUp() {
       userObj.weeklyBudget={}
       userObj.customBudget={}
       const baseURL = import.meta.env.VITE_API_BASE_URL;
-      let res=await axios.post(`${baseURL}/user-api/login`,userObj)
+      let res=await axios.post(`${baseURL}/user-api/user`,userObj)
       if(res.data.message==='user successfully created'){
         navigate('/signin')
       }
