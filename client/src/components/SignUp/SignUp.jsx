@@ -15,7 +15,7 @@ function SignUp() {
       userObj.monthlyBudget={}
       userObj.weeklyBudget={}
       userObj.customBudget={}
-      let res=await axios.post('http://localhost:4000/user-api/user',userObj)
+      let res=await axios.post(`${baseURL}/user-api/login`,userObj)
       if(res.data.message==='user successfully created'){
         navigate('/signin')
       }
